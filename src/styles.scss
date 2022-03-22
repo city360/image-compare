@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  padding: 30px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight:500;
+  line-height:1.4em;
+  color:rgba(0,0,0,.9);
+}
+
+.bg-primary,
+.hover-bg-primary:hover {
+  background-color: #416ce4;
+}
+.b-primary,
+.hover-b-primary:hover {
+  border-color: #416ce4;
+}
+
+code {
+  font-family: Menlo, Monaco, Arial, "Courier New", monospace;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.wil-restaurant-menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-width: 2px;
+  border-bottom-style: dotted;
+  padding-bottom: 5px;
+}
+
+.wil-restaurant-menu__title {
+  margin: 0;
+  line-height: 1;
+  font-size: 18px;
+}
+
+.wil-restaurant-menu__body {
+  padding: 5px 0;
+}
+
+.wil-ribbon {
+  position: relative;
+  color: #fff;
+  padding: 0 16px 0 6px;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.wil-ribbon__shape {
+  position: absolute;
+  border-width: 15px 13px;
+  top: 0;
+  left: 3px;
+  z-index: -1;
+  transform: translate(-100%, 0);
+  border-style: solid;
+  border-left-color: transparent;
+}
+

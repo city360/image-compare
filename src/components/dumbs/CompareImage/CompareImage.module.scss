@@ -1,0 +1,99 @@
+.container {
+  position: relative;
+  user-select: none;
+}
+
+.afterImage {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.beforeImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  will-change: width;
+}
+
+.beforeImageInner {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 0 50%;
+}
+
+.dragItemWrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.dragItem {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  transform: translate(-50%, 0);
+  will-change: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: ew-resize;
+}
+
+.button {
+  position: relative;
+  pointer-events: none;
+}
+
+.beforeLine,
+.afterLine {
+  height: 100%;
+  z-index: -1;
+}
+
+.afterLine {
+  bottom: auto;
+  top: 100%;
+}
+
+.buttonDefault {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    margin: 6px;
+    border-width: 7px 9px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+  }
+  &:after {
+    border-color: transparent transparent transparent #fff;
+  }
+}
+
+.beforeText,
+.afterText {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 20px;
+}
+
+.afterText {
+  left: auto;
+  right: 20px;
+}
